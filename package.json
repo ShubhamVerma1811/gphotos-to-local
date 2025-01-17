@@ -1,0 +1,20 @@
+{
+	"name": "gphotos-to-local",
+	"version": "1.0.0",
+	"description": "A Node.js project for fetching Google Photos media and storing them locally.",
+	"main": "index.ts",
+	"scripts": {
+		"dev": "bun index.ts",
+		"build": "tsc",
+		"lint": "biome lint --write",
+		"format": "biome format --write"
+	},
+	"dependencies": {
+		"googleapis": "^144.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^16.11.7",
+		"typescript": "^4.5.2"
+	}
+}
