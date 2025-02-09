@@ -274,6 +274,8 @@ class GooglePhotosSync {
 		console.log(chalk.green(`✓ Downloaded: ${stats.downloaded} files`));
 		console.log(chalk.yellow(`⚠ Skipped: ${stats.skipped} files`));
 		console.log(chalk.red(`✗ Deleted: ${stats.deleted} files`));
+		const total = stats.downloaded + stats.skipped;
+		console.log(chalk.green(`✓ Total: ${total} files`));
 		if (stats.errors > 0) {
 			console.log(chalk.red(`⚠ Errors encountered: ${stats.errors}`));
 		}
